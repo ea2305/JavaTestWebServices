@@ -6,7 +6,7 @@
     elementFormDefault="qualified">
     <xsd:complexType name="skills">
         <xsd:sequence maxOccurs="unbounded">
-            <xsd:element name="skill"/>
+            <xsd:element name="skill" type="xsd:string"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:element name="success" type="xsd:boolean"/>

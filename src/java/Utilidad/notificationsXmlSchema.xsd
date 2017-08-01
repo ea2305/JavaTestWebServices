@@ -4,5 +4,6 @@
             targetNamespace="http://xml.netbeans.org/schema/notificationsXmlSchema"
     xmlns:tns="http://xml.netbeans.org/schema/notificationsXmlSchema"
     elementFormDefault="qualified">
-
+    <xsd:element name="evento" type="xsd:string"/>
+    <xsd:element name="notificacion" type="xsd:string"/>
 </xsd:schema>
