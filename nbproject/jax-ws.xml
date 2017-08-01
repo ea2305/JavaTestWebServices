@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services>
-    <service name="isActiveUserServiceFromWSDL">
+    <service name="notificationsFromWSDL">
+      <implementation-class>servicesUtilidad.notificationsFromWSDL</implementation-class>
+      <wsdl-url>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/WSDLUtilidad/notificationsWSDL.wsdl</wsdl-url>
+      <local-wsdl-file>notificationsWSDL.wsdl</local-wsdl-file>
+      <service-name>notificationsWSDLService</service-name>
+      <port-name>notificationsWSDLPort</port-name>
+      <package-name>org.netbeans.j2ee.wsdl.javatestwebservices2.java.notificationswsdl</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <use-provider>false</use-provider>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </service>
+    <service name="recrutingFromWSDL">
+      <implementation-class>servicesUtilidad.recrutingFromWSDL</implementation-class>
+      <wsdl-url>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/WSDLUtilidad/recrutingWSDL.wsdl</wsdl-url>
+      <local-wsdl-file>recrutingWSDL.wsdl</local-wsdl-file>
+      <service-name>recrutingWSDLService</service-name>
+      <port-name>recrutingWSDLPort</port-name>
+      <package-name>org.netbeans.j2ee.wsdl.javatestwebservices2.wsdlutilidad.recrutingwsdl</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <use-provider>false</use-provider>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </service>
+    <service name="trainingFromWSDL">
+      <implementation-class>servicesUtilidad.trainingFromWSDL</implementation-class>
+      <wsdl-url>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/WSDLUtilidad/trainingWSDL.wsdl</wsdl-url>
+      <local-wsdl-file>trainingWSDL.wsdl</local-wsdl-file>
+      <service-name>trainingWSDLService</service-name>
+      <port-name>trainingWSDLPort</port-name>
+      <package-name>org.netbeans.j2ee.wsdl.javatestwebservices.wsdlutilidad.trainingwsdl</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <use-provider>false</use-provider>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </service>
+    <service name="isActiveFromWSDL">
       <implementation-class>servicesUtilidad.isActiveFromWSDL</implementation-class>
-      <wsdl-url>file:/Users/gerem/Documents/Projects/SOAHealtService/src/java/WSDLUtilidad/isActiveWSDL.wsdl</wsdl-url>
+      <wsdl-url>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/WSDLUtilidad/isActiveWSDL.wsdl</wsdl-url>
       <local-wsdl-file>isActiveWSDL.wsdl</local-wsdl-file>
       <service-name>isActiveWSDLService</service-name>
       <port-name>isActiveWSDLPort</port-name>
@@ -33,6 +129,39 @@
         </wsimport-option>
       </wsimport-options>
     </service>
+    <service name="scheduleFromWSDL">
+      <implementation-class>servicesUtilidad.scheduleFromWSDL</implementation-class>
+      <wsdl-url>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/WSDLUtilidad/scheduleWSDL.wsdl</wsdl-url>
+      <local-wsdl-file>scheduleWSDL.wsdl</local-wsdl-file>
+      <service-name>scheduleWSDLService</service-name>
+      <port-name>scheduleWSDLPort</port-name>
+      <package-name>org.netbeans.j2ee.wsdl.javatestwebservices.wsdlutilidad.schedulewsdl</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <use-provider>false</use-provider>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </service>
   </services>
   <clients/>
+  <jsr109>true</jsr109>
 </jax-ws>

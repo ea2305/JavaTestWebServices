@@ -15,8 +15,7 @@ import javax.jws.WebService;
 public class recrutingFromWSDL {
 
     public int recrutingWSDLOperation(int part1) {
-        //TODO implement this method
-        throw new UnsupportedOperationException("Not implemented yet.");
+       return part1;
     }
     
 }

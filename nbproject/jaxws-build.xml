@@ -26,24 +26,100 @@
             <isset property="conf.dir"/>
         </condition>
     </target>
-    <target name="wsimport-service-isActiveUserServiceFromWSDL" depends="wsimport-init">
-        <mkdir dir="${build.generated.dir}/jax-wsCache/service/isActiveUserServiceFromWSDL"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/isActiveUserServiceFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/isActiveUserServiceFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/isActiveUserServiceFromWSDL/wsdl/isActiveWSDL.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
-            <depends file="${basedir}/${conf-dir}xml-resources/web-services/isActiveUserServiceFromWSDL/wsdl/isActiveWSDL.wsdl"/>
-            <produces dir="${build.generated.dir}/jax-wsCache/service/isActiveUserServiceFromWSDL"/>
+    <target name="wsimport-service-notificationsFromWSDL" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/notificationsFromWSDL"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/notificationsFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/notificationsFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/notificationsFromWSDL/wsdl/notificationsWSDL.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-services/notificationsFromWSDL/wsdl/notificationsWSDL.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/notificationsFromWSDL"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">
-            <fileset dir="${build.generated.dir}/jax-wsCache/service/isActiveUserServiceFromWSDL">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/notificationsFromWSDL">
                 <include name="**/*.java"/>
             </fileset>
         </copy>
-        <copy todir="${build.web.dir}/WEB-INF/wsdl/isActiveUserServiceFromWSDL">
-            <fileset dir="${basedir}/${conf-dir}xml-resources/web-services/isActiveUserServiceFromWSDL/wsdl/"/>
+        <copy todir="${build.web.dir}/WEB-INF/wsdl/notificationsFromWSDL">
+            <fileset dir="${basedir}/${conf-dir}xml-resources/web-services/notificationsFromWSDL/wsdl/"/>
         </copy>
     </target>
-    <target name="wsimport-service-clean-isActiveUserServiceFromWSDL" depends="-init-project">
-        <delete dir="${build.generated.sources.dir}/jax-ws/org/netbeans/j2ee/wsdl/javatestwebservices2/java/isactivewsdl"/>
-        <delete dir="${build.generated.dir}/jax-wsCache/service/isActiveUserServiceFromWSDL"/>
+    <target name="wsimport-service-clean-notificationsFromWSDL" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/netbeans/j2ee/wsdl/javatestwebservices2/java/notificationswsdl"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/service/notificationsFromWSDL"/>
     </target>
-    <target name="wsimport-service-generate" depends="wsimport-service-isActiveUserServiceFromWSDL"/>
+    <target name="wsimport-service-recrutingFromWSDL" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/recrutingFromWSDL"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/recrutingFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/recrutingFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/recrutingFromWSDL/wsdl/recrutingWSDL.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-services/recrutingFromWSDL/wsdl/recrutingWSDL.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/recrutingFromWSDL"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/recrutingFromWSDL">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.web.dir}/WEB-INF/wsdl/recrutingFromWSDL">
+            <fileset dir="${basedir}/${conf-dir}xml-resources/web-services/recrutingFromWSDL/wsdl/"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-recrutingFromWSDL" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/netbeans/j2ee/wsdl/javatestwebservices2/wsdlutilidad/recrutingwsdl"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/service/recrutingFromWSDL"/>
+    </target>
+    <target name="wsimport-service-trainingFromWSDL" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/trainingFromWSDL/wsdl/trainingWSDL.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-services/trainingFromWSDL/wsdl/trainingWSDL.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.web.dir}/WEB-INF/wsdl/trainingFromWSDL">
+            <fileset dir="${basedir}/${conf-dir}xml-resources/web-services/trainingFromWSDL/wsdl/"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-trainingFromWSDL" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/netbeans/j2ee/wsdl/javatestwebservices/wsdlutilidad/trainingwsdl"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL"/>
+    </target>
+    <target name="wsimport-service-isActiveFromWSDL" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/isActiveFromWSDL"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/isActiveFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/isActiveFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/isActiveFromWSDL/wsdl/isActiveWSDL.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-services/isActiveFromWSDL/wsdl/isActiveWSDL.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/isActiveFromWSDL"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/isActiveFromWSDL">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.web.dir}/WEB-INF/wsdl/isActiveFromWSDL">
+            <fileset dir="${basedir}/${conf-dir}xml-resources/web-services/isActiveFromWSDL/wsdl/"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-isActiveFromWSDL" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/netbeans/j2ee/wsdl/javatestwebservices2/java/isactivewsdl"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/service/isActiveFromWSDL"/>
+    </target>
+    <target name="wsimport-service-scheduleFromWSDL" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/scheduleFromWSDL"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/scheduleFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/scheduleFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/scheduleFromWSDL/wsdl/scheduleWSDL.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-services/scheduleFromWSDL/wsdl/scheduleWSDL.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/scheduleFromWSDL"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/scheduleFromWSDL">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.web.dir}/WEB-INF/wsdl/scheduleFromWSDL">
+            <fileset dir="${basedir}/${conf-dir}xml-resources/web-services/scheduleFromWSDL/wsdl/"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-scheduleFromWSDL" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/netbeans/j2ee/wsdl/javatestwebservices/wsdlutilidad/schedulewsdl"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/service/scheduleFromWSDL"/>
+    </target>
+    <target name="wsimport-service-generate" depends="wsimport-service-notificationsFromWSDL, wsimport-service-recrutingFromWSDL, wsimport-service-trainingFromWSDL, wsimport-service-isActiveFromWSDL, wsimport-service-scheduleFromWSDL"/>
 </project>

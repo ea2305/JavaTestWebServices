@@ -15,9 +15,9 @@ import javax.jws.WebService;
 public class isActiveFromWSDL {
 
     public boolean isActiveWSDLOperation(int idClient) {
-        //TODO implement this method
         /*
-        Aqui debe haber una iimplemntación chingona de BD
+        Aqui va una implementacion chingona de BD
+       
         */
         return true;
     }
