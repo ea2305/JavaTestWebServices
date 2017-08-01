@@ -4,4 +4,10 @@
     <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/Utilidad/isActiveXmlSchema.xsd" uri="src/conf/xml-resources/web-services/isActiveFromWSDL/Utilidad/isActiveXmlSchema.xsd"/>
     <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/WSDLUtilidad/notificationsWSDL.wsdl" uri="src/conf/xml-resources/web-services/notificationsFromWSDL/wsdl/notificationsWSDL.wsdl"/>
     <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/Utilidad/notificationsXmlSchema.xsd" uri="src/conf/xml-resources/web-services/notificationsFromWSDL/Utilidad/notificationsXmlSchema.xsd"/>
+    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/WSDLUtilidad/recrutingWSDL.wsdl" uri="src/conf/xml-resources/web-services/recrutingFromWSDL/wsdl/recrutingWSDL.wsdl"/>
+    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/Utilidad/recrutingXmlSchema.xsd" uri="src/conf/xml-resources/web-services/recrutingFromWSDL/Utilidad/recrutingXmlSchema.xsd"/>
+    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/WSDLUtilidad/scheduleWSDL.wsdl" uri="src/conf/xml-resources/web-services/scheduleFromWSDL/wsdl/scheduleWSDL.wsdl"/>
+    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/Utilidad/scheduleXmlSchema.xsd" uri="src/conf/xml-resources/web-services/scheduleFromWSDL/Utilidad/scheduleXmlSchema.xsd"/>
+    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/WSDLUtilidad/trainingWSDL.wsdl" uri="src/conf/xml-resources/web-services/trainingFromWSDL/wsdl/trainingWSDL.wsdl"/>
+    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices/src/java/Utilidad/trainingXmlSchema.xsd" uri="src/conf/xml-resources/web-services/trainingFromWSDL/Utilidad/trainingXmlSchema.xsd"/>
 </catalog>
