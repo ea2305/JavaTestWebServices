@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/TrainingXmlSchema"
+    xmlns:tns="http://xml.netbeans.org/schema/TrainingXmlSchema"
+    elementFormDefault="qualified">
+    <xsd:complexType name="skills">
+        <xsd:sequence maxOccurs="unbounded">
+            <xsd:element name="skill"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="success" type="xsd:boolean"/>
+    <xsd:element name="skills" type="tns:skills"/>
+
+</xsd:schema>
