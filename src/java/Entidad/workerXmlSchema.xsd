@@ -47,10 +47,10 @@ made subject to such option by the copyright holder.
             targetNamespace="http://xml.netbeans.org/schema/workerXmlSchema"
     xmlns:tns="http://xml.netbeans.org/schema/workerXmlSchema"
     elementFormDefault="qualified">
-    <xsd:element name="workers" type="tns:workers"/>
+    <xsd:element name="workers" type="tns:allWorkers"/>
     <xsd:element name="requestWorker" type="xsd:boolean"/>
     <xsd:element name="idWorker" type="xsd:int"/>
-    <xsd:complexType name="workers">
+    <xsd:complexType name="allWorkers">
         <xsd:sequence>
             <xsd:element name="worker" maxOccurs="unbounded" type="tns:worker"/>
         </xsd:sequence>

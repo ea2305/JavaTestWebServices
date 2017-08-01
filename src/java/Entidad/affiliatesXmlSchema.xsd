@@ -47,5 +47,8 @@ made subject to such option by the copyright holder.
             targetNamespace="http://xml.netbeans.org/schema/affiliatesXmlSchema"
     xmlns:tns="http://xml.netbeans.org/schema/affiliatesXmlSchema"
     elementFormDefault="qualified">
-
+    <xsd:element name="idAffiliates"/>
+    <xsd:element name="requestAffiliate"/>
+    <xsd:element name="affiliates"/>
+    <xsd:complexType name="allAffiliates"/>
 </xsd:schema>
