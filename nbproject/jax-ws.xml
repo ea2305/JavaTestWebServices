@@ -2,7 +2,7 @@
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services>
     <service name="isActiveUserServiceFromWSDL">
-      <implementation-class>servicesUtilidad.isActiveUserServiceFromWSDL</implementation-class>
+      <implementation-class>servicesUtilidad.isActiveFromWSDL</implementation-class>
       <wsdl-url>file:/Users/gerem/Documents/Projects/SOAHealtService/src/java/WSDLUtilidad/isActiveWSDL.wsdl</wsdl-url>
       <local-wsdl-file>isActiveWSDL.wsdl</local-wsdl-file>
       <service-name>isActiveWSDLService</service-name>

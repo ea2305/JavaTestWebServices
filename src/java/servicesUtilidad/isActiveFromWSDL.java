@@ -16,7 +16,7 @@ public class isActiveFromWSDL {
 
     public boolean isActiveWSDLOperation(int idClient) {
         //TODO implement this method
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return true;
     }
     
 }

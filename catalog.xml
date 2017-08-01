@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
-    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/WSDLUtilidad/isActiveWSDL.wsdl" uri="src/conf/xml-resources/web-services/isActiveFromWSDL/wsdl/isActiveWSDL.wsdl"/>
-    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/Utilidad/isActiveXmlSchema.xsd" uri="src/conf/xml-resources/web-services/isActiveFromWSDL/Utilidad/isActiveXmlSchema.xsd"/>
-    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/WSDLUtilidad/notificationsWSDL.wsdl" uri="src/conf/xml-resources/web-services/notificationsFromWSDL/wsdl/notificationsWSDL.wsdl"/>
-    <system systemId="file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/Utilidad/notificationsXmlSchema.xsd" uri="src/conf/xml-resources/web-services/notificationsFromWSDL/Utilidad/notificationsXmlSchema.xsd"/>
-    <system systemId="file:/Users/gerem/Documents/Projects/SOAHealtService/src/java/WSDLUtilidad/isActiveWSDL.wsdl" uri="src/conf/xml-resources/web-services/isActiveUserServiceFromWSDL/wsdl/isActiveWSDL.wsdl"/>
-    <system systemId="file:/Users/gerem/Documents/Projects/SOAHealtService/src/java/Utilidad/isActiveXmlSchema.xsd" uri="src/conf/xml-resources/web-services/isActiveUserServiceFromWSDL/Utilidad/isActiveXmlSchema.xsd"/>
-</catalog>
