@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services>
-    <service name="isActiveFromWSDL">
-      <implementation-class>servicesUtilidad.isActiveFromWSDL</implementation-class>
-      <wsdl-url>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/WSDLUtilidad/isActiveWSDL.wsdl</wsdl-url>
+    <service name="isActiveUserServiceFromWSDL">
+      <implementation-class>servicesUtilidad.isActiveUserServiceFromWSDL</implementation-class>
+      <wsdl-url>file:/Users/gerem/Documents/Projects/SOAHealtService/src/java/WSDLUtilidad/isActiveWSDL.wsdl</wsdl-url>
       <local-wsdl-file>isActiveWSDL.wsdl</local-wsdl-file>
       <service-name>isActiveWSDLService</service-name>
       <port-name>isActiveWSDLPort</port-name>
@@ -33,39 +33,6 @@
         </wsimport-option>
       </wsimport-options>
     </service>
-    <service name="notificationsFromWSDL">
-      <implementation-class>servicesUtilidad.notificationsFromWSDL</implementation-class>
-      <wsdl-url>file:/C:/Users/andre/OneDrive/Documentos/NetBeansProjects/JavaTestWebServices2/src/java/WSDLUtilidad/notificationsWSDL.wsdl</wsdl-url>
-      <local-wsdl-file>notificationsWSDL.wsdl</local-wsdl-file>
-      <service-name>notificationsWSDLService</service-name>
-      <port-name>notificationsWSDLPort</port-name>
-      <package-name>org.netbeans.j2ee.wsdl.javatestwebservices2.java.notificationswsdl</package-name>
-      <catalog-file>catalog.xml</catalog-file>
-      <use-provider>false</use-provider>
-      <wsimport-options>
-        <wsimport-option>
-          <wsimport-option-name>extension</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>verbose</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>fork</wsimport-option-name>
-          <wsimport-option-value>false</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xnocompile</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xendorsed</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-      </wsimport-options>
-    </service>
   </services>
   <clients/>
-  <jsr109>true</jsr109>
 </jax-ws>

@@ -47,8 +47,22 @@ made subject to such option by the copyright holder.
             targetNamespace="http://xml.netbeans.org/schema/affiliatesXmlSchema"
     xmlns:tns="http://xml.netbeans.org/schema/affiliatesXmlSchema"
     elementFormDefault="qualified">
-    <xsd:element name="idAffiliates"/>
-    <xsd:element name="requestAffiliate"/>
-    <xsd:element name="affiliates"/>
-    <xsd:complexType name="allAffiliates"/>
+    <xsd:element name="idAffiliates" type="xsd:int"/>
+    <xsd:element name="requestAffiliate" type="xsd:boolean"/>
+    <xsd:element name="affiliates" type="tns:allAffiliates"/>
+    <xsd:complexType name="allAffiliates">
+        <xsd:sequence>
+            <xsd:element name="affiliate" type="tns:affiliate" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="affiliate">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="picture" type="xsd:string"/>
+            <xsd:element name="affiliation_number" type="xsd:string"/>
+            <xsd:element name="birthdate" type="xsd:date"/>
+            <xsd:element name="sex" type="xsd:string"/>
+            <xsd:element name="address" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
 </xsd:schema>
