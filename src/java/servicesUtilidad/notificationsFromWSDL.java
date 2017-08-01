@@ -15,8 +15,8 @@ import javax.jws.WebService;
 public class notificationsFromWSDL {
 
     public java.lang.String notificationsWSDLOperation(java.lang.String event) {
-        //TODO implement this method
-        throw new UnsupportedOperationException("Not implemented yet.");
+        
+        return "Usted tiene una notificacion";
     }
     
 }

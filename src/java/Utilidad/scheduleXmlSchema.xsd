@@ -4,7 +4,6 @@
             targetNamespace="http://xml.netbeans.org/schema/scheduleXmlSchema"
     xmlns:tns="http://xml.netbeans.org/schema/scheduleXmlSchema"
     elementFormDefault="qualified">
-    <xsd:element name="Month" type="xsd:int"/>
-    <xsd:element name="year" type="xsd:int"/>
     <xsd:element name="reserved" type="xsd:date"/>
+    <xsd:element name="trying" type="xsd:string"/>
 </xsd:schema>
