@@ -102,5 +102,24 @@
         <delete dir="${build.generated.sources.dir}/jax-ws/org/netbeans/j2ee/wsdl/javatestwebservices/wsdlutilidad/schedulewsdl"/>
         <delete dir="${build.generated.dir}/jax-wsCache/service/scheduleFromWSDL"/>
     </target>
-    <target name="wsimport-service-generate" depends="wsimport-service-isActiveFromWSDL, wsimport-service-notificationsFromWSDL, wsimport-service-recrutingFromWSDL, wsimport-service-scheduleFromWSDL"/>
+    <target name="wsimport-service-trainingFromWSDL" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/trainingFromWSDL/wsdl/trainingWSDL.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-services/trainingFromWSDL/wsdl/trainingWSDL.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.web.dir}/WEB-INF/wsdl/trainingFromWSDL">
+            <fileset dir="${basedir}/${conf-dir}xml-resources/web-services/trainingFromWSDL/wsdl/"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-trainingFromWSDL" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/netbeans/j2ee/wsdl/javatestwebservices/wsdlutilidad/trainingwsdl"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/service/trainingFromWSDL"/>
+    </target>
+    <target name="wsimport-service-generate" depends="wsimport-service-isActiveFromWSDL, wsimport-service-notificationsFromWSDL, wsimport-service-recrutingFromWSDL, wsimport-service-scheduleFromWSDL, wsimport-service-trainingFromWSDL"/>
 </project>
